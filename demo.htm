@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ice="http://ns.adobe.com/incontextediting">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<link href="file:///D|/xampp/htdocs/libs/ScoCSS/reset.css" rel="stylesheet" type="text/css" /><!--[if lte IE 7]>
+<![endif]-->
+<script src="includes/ice/ice.js" type="text/javascript"></script></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="" alt="在這裡插入商標" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background: #8090AB; display:block;" /></a> 
+    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="#">連結一</a></li>
+      <li><a href="#">連結二</a></li>
+      <li><a href="#">連結三</a></li>
+      <li><a href="#">連結四</a></li>
+    </ul>
+    <p> 以上的連結示範基本的導覽結構，此結構使用以 CSS 設定樣式的項目清單。請以此做為起點，然後修改屬性來產生您獨有的外觀。如果需要飛出選單，請使用 a Spry menu、menu widget from Adobe's Exchange 或多種其他的 Javascript 或 CSS 解決方案自行建立。</p>
+    <p>如果想要將導覽列於頂端，只需將 ul.nav 移到頁面頂端，然後重新建立樣式設定即可。</p>
+    <!-- end .sidebar1 --></div>
+  <div class="content" ice:editable="*">
+    <h1>說明</h1>
+    <p>請注意，這些版面的 CSS 都有詳細的註解。如果您是在「設計」檢視中進行大部分的作業，可以看一下程式碼來取得有關使用流動版面 CSS 的提示。您可以在啟動您的網站之前，將這些註解移除。有關這些 CSS 版面所使用的技巧之詳細資訊，請至 Adobe 開發人員中心閱讀本文 - <a href=http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts CSS 版</a>。</p>
+    <h2>清除方法</h2>
+    <p>因為所有的欄都是浮動的，所以這個版面會在 .footer 規則中使用 clear:both 宣告。這項清除技巧可強制 .container 辨識欄結束的位置，以顯示放置在 .container 上的任何邊框或背景顏色。如果您的設計需要您從 .container 移除 .footer，就需要使用其他的清除方法。最可靠的方法是在最後的浮動欄之後 (但在 .container 結束之前) 加入 &lt;br class="clearfloat" /&gt; or &lt;div class="clearfloat"&gt;&lt;/div&gt;，這樣就會產生相同的清除效果。</p>
+    <h3>商標取代</h3>
+    <p>在此版面的 .header 中，會在您要放置商標的位置使用影像預留位置。建議您移除該預留位置，並使用自己的連結商標加以取代。 </p>
+    <p> 請注意，如果要使用「屬性」檢視窗使用 SRC 欄位導覽到商標影像 (而不是移除並取代預留位置)，則必須將行內背景和顯示屬性移除。這些行內樣式只會在瀏覽器中用來顯示商標預留位置，以便達到示範的目的。 </p>
+    <p>若要移除行內樣式，請確定「CSS 樣式」面板已設定為「目前」。選取該影像，然後在「CSS 樣式」面板的「屬性」窗格中，以滑鼠右鍵按一下顯示及背景屬性並加以刪除 (當然，您也可以直接到程式碼中刪除影像或預留位置的行內樣式)。</p>
+    <h4>Internet Explorer 條件式註解</h4>
+    <p>這些流動版面包含 Internet Explorer 條件式註解 (IECC)，可用來修正兩個問題。 </p>
+    <ol>
+      <li>瀏覽器在依百分比而定的版面中捨入 Div 大小的方法不一致。如果瀏覽器必須呈現 144.5 像素或 564.5 像素等數字，就必須將其捨入成最接近的整數。Safari 和 Opera 會捨去小數位，Internet Explorer 會進位，Firefox 則會向上進一欄然後向下捨去一欄，以將容器完全填滿。這些捨入問題可能會導致某些版面的不一致。在此 IECC 中，有 1 像素的負邊界可用來修正 IE。您可以將其移到任何欄 (左右方皆可)，依您的版面需求而定。</li>
+      <li>zoom 屬性會加入至導覽清單內的錨點，因為在某些情況下，IE6 或 IE7 中會呈現多餘的空白。縮放能為 IE 提供修正此問題的專屬 hasLayout 屬性。</li>
+      </ol>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+    	<button value="1" type="button">
+    	<p>123</p>
+    	<p>59859</p>
+    	</button>
+    	&nbsp;</p>
+    <!-- end .content --></div>
+  <div class="sidebar2">
+    <h4>背景</h4>
+    <p>就本質而言，任何 Div 上的背景顏色都只會顯示內容的長度。如果您想要使用分隔線而非顏色，請將邊框放置在 .content Div 的側邊 (但只有在其一定會包含更多內容時，才能這麼做    </p>
+    <h4>背景</h4>
+	<pre>就本質而言，任何 0123456789 Div 上的背景顏色都只會顯示內容的長度。
+	如果您想要使用分隔線而非顏色，請將邊框放置在 .content Div 的側邊 (但只有在其一定會包含更多內容時，才能這麼做</pre>
+	<code>就本質而言，任何 0123456789 Div 上的背景顏色都只會顯示內容的長度。
+	如果您想要使用分隔線而非顏色，請將邊框放置在 .content Div 的側邊 (但只有在其一定會包含更多內容時，才能這麼做</code>
+	<p>)。</p>
+	
+	<p>
+  <ruby><rb>囧</rb><rt>ㄐㄩㄥˇ</rt></ruby>，大明也。<br/>
+  江淹：「<ruby><rb>囧</rb><rt>ㄐㄩㄥˇ</rt></ruby><ruby><rb>囧</rb><rt>ㄐㄩㄥˇ</rt></ruby>秋月明，
+  憑軒<ruby><rb>絰</rb><rt>ㄉㄧㄝˊ</rt></ruby><ruby><rb>麑</rb><rt>ㄋㄧˊ</rt></ruby>老。」
+</p>
+<p>
+  <ruby><rb>夏</rb><rt>なつ</rt></ruby>の<ruby><rb>向日葵</rb><rt>ひまわり</rt></ruby>
+</p>
+<h5>with <rp></h5>
+<p>
+  <ruby><rb>夏</rb><rp>(</rp><rt>なつ</rt><rp>)</rp></ruby>の
+  <ruby><rb>向日葵</rb><rp>(</rp><rt>ひまわり</rt><rp>)</rp></ruby>
+</p>
+	
+    <!-- end .sidebar2 --></div>
+  <div class="footer">
+    <p>此 .footer 包含 position:relative 宣告；為 Internet Explorer 6 提供 .footer 的 hasLayout，並讓它能夠進行正確的清除作業。如果不需要支援 IE6，就可以加以移除。</p>
+    <!-- end .footer --></div>
+<!-- end .container --></div>
+</body>
+</html>

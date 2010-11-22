@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/* CSS Document 
+Elements CSS Framework by Ben Henschel
+Blueprint CSS Framework 0.9
+BlueTrip CSS Framework
+Mass Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background:transparent;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-family:inherit;
+	font-size:100%;
+	text-align:left;
+	vertical-align:inherit;
+	white-space: normal;
+	word-break: break-all;
+}
+html {
+	overflow: auto;
+	height:auto;
+}
+html, body {
+	font-size: 12px;
+	background:transparent;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+body {
+	font-size: 12px/1.6em;
+	line-height:1.33em;
+	overflow: visible;
+	height:100%;
+	
+	vertical-align:text-bottom;
+	*vertical-align: baseline;
+}
+
+blockquote, q { quotes:none; }
+lockquote:before, blockquote:after, q:before, q:after { content:none; }
+:focus { outline:0; }
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+a img { border:none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+html { font-size:100.01%; }
+h1 { font-size:1.9em; }
+h2 { font-size:1.7em; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.3em; }
+h5 { font-size:1.2em; }
+h6 { font-size:1em; }
+h1, h2, h3, h4, h5, h6 {
+	line-height:1.75em;
+	margin-bottom:0.1em;
+	font-weight:bold;
+	margin-top: 0.1em;
+	margin-right: 0.25em;
+	margin-left: 0.25em;
+}
+strong, th, thead td, b { font-weight:bold; }
+blockquote, ul, ol, dl { margin:1em; }
+ol, ul, dl { margin-left:2em; }
+ol li { list-style: decimal outside; }
+ul li { list-style: disc outside; }
+ul, ol, dl, dd { margin-left:30px; }
+dt { font-weight:bold; }
+ul, ol { margin-bottom:.7em; }
+ul { list-style:disc; }
+ol { list-style:decimal; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+cite, em, dfn { font-style: italic; }
+code, kbd, samp, pre, tt, var { font-family: 'andale mono', "Bitstream Vera Sans Mono", 'lucida console', "Courier New", Courier, monospace; }
+pre, code {
+	width:inherit;
+	word-break: break-all;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	*white-space: pre;           /* IE */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+small, sup, sub { font-size: 85%; }
+abbr, acronym {
+	text-transform: uppercase;
+	font-size: 85%;
+	letter-spacing: .1em;
+}
+a abbr, a acronym { border: none; }
+abbr[title], acronym[title], dfn[title] {
+	cursor: help;
+	border-bottom: 1px solid #ccc;
+}
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+/*** QUOTES ***/
+blockquote *:first-child:before { content: "\201C"; }
+blockquote *:first-child:after { content: "\201D"; }
+/*** FORMS ***/
+
+fieldset {
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-radius-topleft: 6px;
+	-webkit-border-radius-topleft: 6px;
+	-webkit-border-radius-topleft: 6px;
+	-webkit-border-radius-topleft: 6px;
+}
+fieldset {
+	padding:1.4em;
+	margin: 0.1em 0.3em 0.1em 0.3em;
+	border: 1px solid #ccc;
+}
+legend {
+	font-weight: bold;
+	font-size:1.2em;
+}
+label { font-weight: bold; }
+textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
+	border-color: #888;
+	outline: 2px solid #ffffaa;
+}
+input, select { cursor: pointer; }
+input[type='text'], input[type='password'] { cursor: text; }
+/*** STYLES FOR BUTTONS ***/
+a.button, button {
+	display: inline-block;
+	margin:0 0.583em 0.667em 0;
+	padding:5px 10px 5px 7px;   /*** Links ***/
+	border:1px solid #dedede;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	background-color:#f5f5f5;
+	font-family:"Liberation Sans", Helvetica, Arial, sans-serif;
+	font-size:100%;
+	line-height:130%;
+	text-decoration:none;
+	font-weight:bold;
+	color:#565656;
+	cursor:pointer;
+}
+button {
+	width:auto;
+	overflow:visible;
+	padding:4px 10px 3px 7px;
+}
+*:first-child+html .container button[type] { padding:4px 10px 3px 7px; }
+button img, a.button img {
+	margin:0 3px -3px 0;
+	padding:0;
+	border:none;
+	width:16px;
+	height:16px;
+	float:none;
+}
+/*** STANDARD BUTTONS ***/
+button:hover, a.button:hover {
+	background-color:#dff4ff;
+	border:1px solid #c2e1ef;
+	color:#336699;
+}
+a.button:active, button:active {
+	background-color:#6299c5;
+	border:1px solid #6299c5;
+	color:#fff;
+}
+/* Hides from IE-mac \*/
+
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* End hide from IE-mac */
+
+::selection {
+	background-color: #DD0044;
+	color: #FFFFFF;
+}
+::-moz-selection {
+	background-color: #DD0044;
+	color: #FFFFFF;
+}
+
+/* ~~~~~~~~~~~~ */
+
+ruby {
+	display: inline-table;
+	vertical-align:text-bottom;
+	*vertical-align: baseline;
+}
+ruby * {
+display: inline;
+line-height: 1.2;
+text-indent: 0;
+text-align: center;
+white-space: nowrap;
+}
+ruby > * {
+display: table-row-group;
+}
+ruby > rt, ruby rtc {
+display: table-header-group;
+font-size: 60%;
+}
+ruby rtc + rtc { display: table-footer-group }
+ruby rbc > *, ruby rtc > * { display: table-cell }
+/* this only works when an rt spans across all rb */
+ruby rtc > *[rbspan] { display: table-caption }
+ruby rp { display: none } 
+
+/* ~~~~~~~~~~~~ */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url-prefix(http), url-prefix(file) {
+	img:-moz-broken {
+		-moz-force-broken-image-icon:1;
+		min-width:24px;
+		min-height:24px;
+	}
+}
