@@ -4,13 +4,17 @@
 Elements CSS Framework by Ben Henschel
 Blueprint CSS Framework 0.9
 BlueTrip CSS Framework
+52framework
 Mass Reset*/
 
 * {
 	margin: 0;
 	padding: 0;
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
 	background:transparent;
 	margin:0;
 	padding:0;
@@ -31,6 +35,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html {
 	overflow: auto;
 	height:auto;
+
+	border:0;
+	outline:0;
 }
 html, body {
 	font-size: 12px;
@@ -47,6 +54,9 @@ body {
 	*vertical-align: baseline;
 }
 
+/* 52framework */
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
+
 blockquote, q { quotes:none; }
 
 blockquote:before, blockquote:after, q:before, q:after {
@@ -61,6 +71,7 @@ table {
 	border-spacing:0;
 }
 table caption, table th { text-align: center; }
+table, th, td {vertical-align:middle;}
 
 a img {
 	/* 這個選取器會移除某些瀏覽器在影像由連結所圍繞時，影像周圍所顯示的預設藍色邊框 */
@@ -73,6 +84,9 @@ a {
 	/* 除非您要設定非常獨特的連結樣式，否則最好提供底線，以便快速看出 */
 
 	cursor:pointer;
+
+	/* 52framework */
+	vertical-align:baseline;
 }
 a:hover, a:active, a:focus {
 	/* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
@@ -107,6 +121,9 @@ ol { list-style:decimal; }
 ins { text-decoration:none; }
 del { text-decoration:line-through; }
 cite, em, dfn { font-style: italic; }
+
+dfn { font-weight:bold; }
+
 code, kbd, samp, pre, tt, var { font-family: 'andale mono', "Bitstream Vera Sans Mono", 'lucida console', "Courier New", Courier, monospace; }
 pre, code {
 	width:inherit;
@@ -123,11 +140,13 @@ abbr, acronym {
 	text-transform: uppercase;
 	font-size: 85%;
 	letter-spacing: .1em;
+
+	border-bottom:1px dashed #CCC;
 }
 a abbr, a acronym { border: none; }
 abbr[title], acronym[title], dfn[title] {
 	cursor: help;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px dashed #666;
 }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
@@ -390,4 +409,13 @@ ruby rb { text-align: center; }
 		min-width:24px;
 		min-height:24px;
 	}
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
